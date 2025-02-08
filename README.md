@@ -69,9 +69,9 @@ To create a basic website, we will use HTML for the structure, CSS for styling, 
 2. **CSS**: Style the webpage to make it visually appealing.
 3. **JavaScript**: Implement the DNS resolution functionality using an external API like `ip-api.com`.
 
-Networking Aspects
-Key Networking Concepts Demonstrated:
-DNS (Domain Name System):
+## Networking Aspects
+### Key Networking Concepts Demonstrated:
+### DNS (Domain Name System):
 
 The project uses a DNS resolution feature where a user can input a domain name and resolve it to its IP address using a public API (ip-api.com).
 DNS records like A Records and CNAME Records are used to map domain names to IP addresses.
