@@ -1,51 +1,55 @@
 # Computer Networking Project: Website Setup
 
-This project demonstrates the process of setting up a basic website that allows users to resolve domain names to IP addresses, showcasing essential networking concepts such as DNS, IP addresses, and web protocols. The website includes interactive features like DNS resolution using a public API and detailed sections explaining networking topics.
+## Overview
+
+This project demonstrates how to set up a website and configure it using a hosting service with a custom or temporary domain. The website is designed using basic web technologies such as HTML, CSS, and JavaScript, while also showcasing networking concepts like DNS, IP addresses, and protocols.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
-4. [Technologies Used](#technologies-used)
-5. [Setup Instructions](#setup-instructions)
-6. [Usage](#usage)
-7. [Networking Concepts](#networking-concepts)
-8. [Contributors](#contributors)
-9. [License](#license)
+1. [Project Overview](#project-overview)
+2. [Domain & Hosting Setup](#domain--hosting-setup)
+3. [Website Setup](#website-setup)
+4. [Networking Aspects](#networking-aspects)
+5. [Steps for Implementation](#steps-for-implementation)
+6. [Key Concepts](#key-concepts)
+7. [Testing and Validation](#testing-and-validation)
+8. [Acknowledgements](#acknowledgements)
 
 ---
 
-## Introduction
+## Project Overview
 
-This project aims to demonstrate key networking principles while building a simple yet functional website. The main focus of this project is on DNS resolution, which allows users to input a domain name and retrieve its associated IP address in real time. This showcases the connection between domain names and IP addresses, which is a fundamental aspect of computer networking.
+In this project, you will learn how to set up a simple website using basic HTML, CSS, and JavaScript. The website will demonstrate various networking concepts, including:
 
-## Features
+- Domain and Hosting Setup
+- DNS Resolution
+- IP Addressing (Static and Dynamic IPs)
+- HTTPS (SSL/TLS) Configuration
+- Network Troubleshooting (Ping and Traceroute)
 
-- **DNS Resolution**: Enter a domain name (e.g., google.com) and resolve it to its IP address using an online API.
-- **Networking Concepts**: Learn about DNS, IP addresses, protocols (HTTP/HTTPS), and more through the project's documentation sections.
-- **Dynamic Interaction**: The website resolves domain names dynamically and displays the corresponding IP address or error message.
+---
 
-## Getting Started
+## Domain & Hosting Setup
 
-To get started with the project, follow these steps to set up and run the website on your local machine or upload it to a server.
+### Domain & Hosting
 
-### Prerequisites
+The first step in setting up your website is choosing a hosting service and a domain name. For simplicity, we recommend using GitHub Pages, as it provides free hosting for static websites. You can also use a temporary domain or purchase a custom domain from services like Namecheap, GoDaddy, etc.
 
-- A web browser (Chrome, Firefox, etc.)
-- Text editor (VS Code, Sublime Text, etc.)
-- An internet connection for accessing the DNS API
+- **Free Hosting Option**: GitHub Pages
+- **Temporary Domain**: You can use free subdomains provided by GitHub Pages (e.g., `yourusername.github.io`).
+- **Custom Domain**: You can purchase a domain and configure it to point to your GitHub Pages site.
 
-## Technologies Used
+**Steps for setting up GitHub Pages hosting:**
+1. Create a repository on GitHub.
+2. Push your website files (HTML, CSS, JavaScript) to the repository.
+3. Go to the repository **Settings** > **Pages** and select the branch you want to deploy (usually `main`).
+4. GitHub Pages will automatically host the site at `https://yourusername.github.io/yourrepository/`.
 
-- **HTML**: Structure and content of the webpage
-- **CSS**: Styling to make the website visually appealing
-- **JavaScript**: Interactive features for DNS resolution
-- **IP-API**: Public API used for domain-to-IP resolution
+For custom domains:
+- Purchase a domain from a domain registrar.
+- Set up DNS records (A Record and CNAME) to point to GitHub Pages’ IP addresses.
 
-## Setup Instructions
+### DNS Configuration for Custom Domains
 
-1. **Clone the repository** to your local machine:
-   
-   ```bash
-   git clone ttps://github.com/silviaraghav/networking-project.git
+If you decide to use a custom domain, you’ll need to configure DNS records. For GitHub Pages, the DNS records are as follows:
+- **A Record**: Point the root domain (example.com) to the following IP addresses:
