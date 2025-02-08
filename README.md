@@ -53,3 +53,36 @@ For custom domains:
 
 If you decide to use a custom domain, you’ll need to configure DNS records. For GitHub Pages, the DNS records are as follows:
 - **A Record**: Point the root domain (example.com) to the following IP addresses:
+- 185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153
+
+- **CNAME Record**: For a subdomain like `www.example.com`, set the CNAME record to point to `yourusername.github.io`.
+
+---
+
+## Website Setup
+
+### Basic Website Structure
+
+To create a basic website, we will use HTML for the structure, CSS for styling, and JavaScript for interactive features. Here's a simple setup:
+
+1. **HTML**: Define the basic structure of the webpage, including sections for DNS resolution and networking concepts.
+2. **CSS**: Style the webpage to make it visually appealing.
+3. **JavaScript**: Implement the DNS resolution functionality using an external API like `ip-api.com`.
+
+Networking Aspects
+Key Networking Concepts Demonstrated:
+DNS (Domain Name System):
+
+The project uses a DNS resolution feature where a user can input a domain name and resolve it to its IP address using a public API (ip-api.com).
+DNS records like A Records and CNAME Records are used to map domain names to IP addresses.
+IP Addressing:
+
+The website explains the concept of static and dynamic IP addresses.
+The website itself is hosted on GitHub Pages, and users can learn how to map domain names to IP addresses.
+Protocols (HTTP and HTTPS):
+
+The website is accessible over HTTPS, ensuring secure communication.
+HTTPS ensures that data is encrypted between the client and the server, protecting user privacy and preventing attacks.
+Testing and Troubleshooting:
+
+Users can test network connectivity using tools like Ping and Traceroute to verify the availability of the website from different locations.
