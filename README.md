@@ -48,4 +48,4 @@ To get started with the project, follow these steps to set up and run the websit
 1. **Clone the repository** to your local machine:
    
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone ttps://github.com/silviaraghav/networking-project.git
