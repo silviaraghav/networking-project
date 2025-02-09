@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networking Project: Website Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Computer Networking Project: Website Setup</h1>
+        <p>This document will guide you through the process of setting up a website with a custom domain, and demonstrating knowledge of DNS, IP addresses, and protocols.</p>
+    </header>
+
+    <section>
+        <h2>1. Domain Name System (DNS) and Domain Configuration</h2>
+        <p>The <strong>Domain Name System (DNS)</strong> is responsible for translating human-readable domain names (e.g., www.example.com) into IP addresses (e.g., 192.168.1.1) that computers can understand.</p>
+        <h3>Key Concepts:</h3>
+        <ul>
+            <li><strong>DNS Records</strong>: Configuring DNS records such as A Records and CNAME Records.</li>
+            <li><strong>A Record</strong>: Maps a domain name to an IP address.</li>
+            <li><strong>CNAME Record</strong>: Maps a subdomain to another domain.</li>
+        </ul>
+        <h3>Steps for DNS Configuration:</h3>
+        <ol>
+            <li><strong>Purchase a Domain</strong>: Buy a domain from a domain registrar (e.g., Namecheap, GoDaddy).</li>
+            <li><strong>Configure DNS Settings</strong>: Set up A Records for GitHub Pages’ IP addresses, and CNAME for subdomains like www.</li>
+            <li><strong>Verify DNS Resolution</strong>: Use a DNS lookup tool like <a href="https://www.dnsstuff.com/" target="_blank">DNSstuff</a> to check if the domain resolves to the correct IP address.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. DNS Resolution (Using JavaScript)</h2>
+        <p>In this section, you can enter a domain name to resolve it to an IP address. This feature demonstrates the basic functionality of DNS resolution using a JavaScript API.</p>
+        
+        <label for="domain">Enter Domain Name:</label>
+        <input type="text" id="domain" placeholder="Enter a domain (e.g., google.com)">
+        <button onclick="resolveDNS()">Resolve DNS</button>
+        
+        <p id="ipAddress"></p>
+    </section>
+
+    <section>
+        <h2>3. IP Address and Hosting</h2>
+        <p>Every device connected to the internet has a unique identifier known as an <strong>IP address</strong>. Websites are hosted on servers, each of which has an IP address that users can connect to.</p>
+        <h3>Key Concepts:</h3>
+        <ul>
+            <li><strong>IP Address</strong>: A numerical label that identifies a device on a network.</li>
+            <li><strong>Static IP</strong>: An IP address that remains fixed.</li>
+            <li><strong>Dynamic IP</strong>: An IP address that may change over time.</li>
+        </ul>
+        <h3>Steps for IP Configuration:</h3>
+        <ol>
+            <li><strong>GitHub Pages IP</strong>: GitHub Pages provides its own IP addresses. You can configure your DNS to point to GitHub's IPs:
+                <ul>
+                    <li>185.199.108.153</li>
+                    <li>185.199.109.153</li>
+                    <li>185.199.110.153</li>
+                    <li>185.199.111.153</li>
+                </ul>
+            </li>
+            <li><strong>Verify IP Address</strong>: Use tools like Ping or WhatIsMyIP to confirm that the domain resolves to the correct IP address.</li>
+            <li><strong>Testing</strong>: Access the website via its domain to ensure it is live.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>4. Protocols and Website Access</h2>
+        <p>Websites are accessed using protocols, primarily <strong>HTTP</strong> (HyperText Transfer Protocol) and <strong>HTTPS</strong> (HyperText Transfer Protocol Secure).</p>
+        <h3>Key Concepts:</h3>
+        <ul>
+            <li><strong>HTTP</strong>: The standard protocol for transferring web pages. However, it is not encrypted.</li>
+            <li><strong>HTTPS</strong>: A secure version of HTTP that uses SSL/TLS encryption to protect data.</li>
+        </ul>
+        <h3>Steps for Configuring HTTPS (SSL/TLS):</h3>
+        <ol>
+            <li><strong>GitHub Pages</strong>: GitHub Pages automatically supports HTTPS. Ensure that "Enforce HTTPS" is enabled in the repository settings.</li>
+            <li><strong>SSL Certificates</strong>: Use a service like Let's Encrypt to secure your domain if you are using a different hosting provider.</li>
+            <li><strong>Verify HTTPS</strong>: Check that your website loads with HTTPS (https://www.mywebsite.com) instead of HTTP.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>5. Site Accessibility and Network Troubleshooting</h2>
+        <p>To ensure that your website is available to all users, you must test it across different networks and devices.</p>
+        <h3>Key Concepts:</h3>
+        <ul>
+            <li><strong>Ping Test</strong>: Checks if the server is reachable from different locations.</li>
+            <li><strong>Traceroute</strong>: Shows the path taken by data to reach your server.</li>
+        </ul>
+        <h3>Steps for Troubleshooting Network Access:</h3>
+        <ol>
+            <li><strong>Ping Your Domain</strong>: Use the ping command to test if your domain is reachable.
+                <pre>ping www.example.com</pre>
+            </li>
+            <li><strong>Traceroute</strong>: Use the traceroute command to see how data reaches your server.
+                <pre>traceroute www.example.com</pre>
+            </li>
+            <li><strong>Online Accessibility Tests</strong>: Use tools like Pingdom or GTMetrix to test the accessibility and performance of your website.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>6. Demonstrating Networking Principles</h2>
+        <p>In this section, we demonstrate key networking concepts that are fundamental to understanding website accessibility and networking:</p>
+        <ul>
+            <li><strong>Domain Name Resolution (DNS)</strong>: How domain names are translated into IP addresses and how to verify DNS resolution using the <a href="https://www.dnsstuff.com/" target="_blank">DNS lookup tool</a>.</li>
+            <li><strong>IP Addressing</strong>: Understanding static vs. dynamic IP addresses and the importance of setting up A Records in DNS configurations for proper website access.</li>
+            <li><strong>HTTP/HTTPS Protocols</strong>: Differences between HTTP (unsecured) and HTTPS (secured), and the steps for enabling HTTPS to ensure secure data transmission.</li>
+            <li><strong>Network Testing</strong>: Performing basic network diagnostics like ping tests and traceroutes to verify connectivity and identify network issues.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Documenting Networking Aspects</h2>
+        <p>For the project report, ensure you provide a detailed explanation of:</p>
+        <ul>
+            <li><strong>Domain Setup</strong>: Discuss the purchase and DNS configuration of the domain.</li>
+            <li><strong>IP Address and DNS Configuration</strong>: Include how the IP address was configured and validated.</li>
+            <li><strong>Protocol Configuration (HTTPS)</strong>: Detail the setup of HTTPS for secure communication.</li>
+            <li><strong>Website Accessibility</strong>: Explain how you verified the accessibility of the website using various tools.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Computer Networking Project | GitHub Repository: <a href="https://github.com/silviaraghav/networking-project.git" target="_blank">silviaraghav/networking-project</a></p>
+    </footer>
+
+    <script>
+        function resolveDNS() {
+            const domain = document.getElementById('domain').value;
+
+            if (!domain) {
+                alert('Please enter a domain name');
+                return;
+            }
+
+            // API URL to get domain information
+            const url = `http://ip-api.com/json/${domain}`;
+
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();  // Parse the JSON response
+                    }
+                    throw new Error('Failed to fetch data');
+                })
+                .then(data => {
+                    // Display IP address from the response
+                    if (data.query) {
+                        document.getElementById('ipAddress').textContent = `IP Address: ${data.query}`;
+                    } else {
+                        document.getElementById('ipAddress').textContent = 'No IP address found for the domain.';
+                    }
+                })
+                .catch(error => {
+                    // Handle errors
+                    document.getElementById('ipAddress').textContent = `Error: ${error.message}`;
+                });
+        }
+    </script>
+
+</body>
+</html>
