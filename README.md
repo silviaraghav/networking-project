@@ -93,11 +93,10 @@ Users can test network connectivity using tools like Ping and Traceroute to veri
 **Configure DNS:** If using a custom domain, configure your DNS settings to point to GitHub Pages.
 **Enable HTTPS:** Make sure that your GitHub Pages site supports HTTPS by enabling it in the repository settings.
 
-## Key Concepts
-**DNS (Domain Name System):** Translates human-readable domain names to machine-readable IP addresses.
-**A Record:** Maps a domain to an IP address (e.g., example.com to 192.168.1.1).
-**CNAME Record:** Maps a subdomain to another domain (e.g., www.example.com to example.com).
-**Static IP Address:** An IP address that doesn't change.
-**Dynamic IP Address:** An IP address that may change over time.
-**HTTPS (SSL/TLS):** Secure communication protocol that encrypts data between the client and server.
+## Key Concepts**DNS (Domain Name System):** Translates human-readable domain names to machine-readable IP addresses.
+- **A Record:** Maps a domain to an IP address (e.g., example.com to 192.168.1.1).
+- **CNAME Record:** Maps a subdomain to another domain (e.g., www.example.com to example.com).
+- **Static IP Address:** An IP address that doesn't change.
+- **Dynamic IP Address:** An IP address that may change over time.
+- **HTTPS (SSL/TLS):** Secure communication protocol that encrypts data between the client and server.
 
