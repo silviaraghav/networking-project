@@ -53,7 +53,7 @@ For custom domains:
 
 If you decide to use a custom domain, you’ll need to configure DNS records. For GitHub Pages, the DNS records are as follows:
 - **A Record**: Point the root domain (example.com) to the following IP addresses:
-- 185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153
+  185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153
 
 - **CNAME Record**: For a subdomain like `www.example.com`, set the CNAME record to point to `yourusername.github.io`.
 
@@ -89,15 +89,15 @@ Users can test network connectivity using tools like Ping and Traceroute to veri
 
 ## Steps for Implementation
 ### Set Up GitHub Pages: Follow the instructions above to create and deploy your website on GitHub Pages.
-**.Add DNS Resolution: Implement a JavaScript function to resolve domain names to IP addresses using an external API.
-**.Configure DNS: If using a custom domain, configure your DNS settings to point to GitHub Pages.
-**.Enable HTTPS: Make sure that your GitHub Pages site supports HTTPS by enabling it in the repository settings.
+**Add DNS Resolution:** Implement a JavaScript function to resolve domain names to IP addresses using an external API.
+**Configure DNS:** If using a custom domain, configure your DNS settings to point to GitHub Pages.
+**Enable HTTPS:** Make sure that your GitHub Pages site supports HTTPS by enabling it in the repository settings.
 
 ## Key Concepts
-1.DNS (Domain Name System): Translates human-readable domain names to machine-readable IP addresses.
-2.A Record: Maps a domain to an IP address (e.g., example.com to 192.168.1.1).
-3.CNAME Record: Maps a subdomain to another domain (e.g., www.example.com to example.com).
-4.Static IP Address: An IP address that doesn't change.
-5.Dynamic IP Address: An IP address that may change over time.
-6.HTTPS (SSL/TLS): Secure communication protocol that encrypts data between the client and server.
+**DNS (Domain Name System):** Translates human-readable domain names to machine-readable IP addresses.
+**A Record:** Maps a domain to an IP address (e.g., example.com to 192.168.1.1).
+**CNAME Record:** Maps a subdomain to another domain (e.g., www.example.com to example.com).
+**Static IP Address:** An IP address that doesn't change.
+**Dynamic IP Address:** An IP address that may change over time.
+**HTTPS (SSL/TLS):** Secure communication protocol that encrypts data between the client and server.
 
