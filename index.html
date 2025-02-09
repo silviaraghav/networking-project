@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Networking Project: Website Setup</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -127,39 +128,4 @@
         <p>&copy; 2025 Computer Networking Project | GitHub Repository: <a href="https://github.com/silviaraghav/networking-project.git" target="_blank">silviaraghav/networking-project</a></p>
     </footer>
 
-    <script>
-        function resolveDNS() {
-            const domain = document.getElementById('domain').value;
-
-            if (!domain) {
-                alert('Please enter a domain name');
-                return;
-            }
-
-            // API URL to get domain information
-            const url = `https://ip-api.com/json/${domain}`;
-
-            fetch(url)
-                .then(response => {
-                    if (response.ok) {
-                        return response.json();  // Parse the JSON response
-                    }
-                    throw new Error('Failed to fetch data');
-                })
-                .then(data => {
-                    // Display IP address from the response
-                    if (data.query) {
-                        document.getElementById('ipAddress').textContent = `IP Address: ${data.query}`;
-                    } else {
-                        document.getElementById('ipAddress').textContent = 'No IP address found for the domain.';
-                    }
-                })
-                .catch(error => {
-                    // Handle errors
-                    document.getElementById('ipAddress').textContent = `Error: ${error.message}`;
-                });
-        }
-    </script>
-
-</body>
-</html>
+   
