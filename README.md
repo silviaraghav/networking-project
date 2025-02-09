@@ -89,9 +89,9 @@ Users can test network connectivity using tools like Ping and Traceroute to veri
 
 ## Steps for Implementation
 ### Set Up GitHub Pages: Follow the instructions above to create and deploy your website on GitHub Pages.
-1.Add DNS Resolution: Implement a JavaScript function to resolve domain names to IP addresses using an external API.
-2.Configure DNS: If using a custom domain, configure your DNS settings to point to GitHub Pages.
-3.Enable HTTPS: Make sure that your GitHub Pages site supports HTTPS by enabling it in the repository settings.
+**.Add DNS Resolution: Implement a JavaScript function to resolve domain names to IP addresses using an external API.
+**.Configure DNS: If using a custom domain, configure your DNS settings to point to GitHub Pages.
+**.Enable HTTPS: Make sure that your GitHub Pages site supports HTTPS by enabling it in the repository settings.
 
 ## Key Concepts
 1.DNS (Domain Name System): Translates human-readable domain names to machine-readable IP addresses.
