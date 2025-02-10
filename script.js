@@ -11,10 +11,19 @@ function resolveDNS() {
     // Display loading message while fetching
     document.getElementById('ipAddress').textContent = 'Resolving domain...';
 
-    // API URL to get domain information
-    const url = `https://ip-api.com/json/${domain}`;
+    // API URL to get domain records (ensure to use the correct domain)
+    const url = `https://api.dnsimple.com/v2/domains/${domain}/records`;
 
-    fetch(url)
+    // Your DNSimple API token (replace with your own token)
+    const apiToken = 'YOUR_API_TOKEN';
+
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${apiToken}`,  // API Authentication Token
+            'Content-Type': 'application/json'
+        }
+    })
         .then(response => {
             if (response.ok) {
                 return response.json();  // Parse the JSON response
@@ -22,11 +31,13 @@ function resolveDNS() {
             throw new Error('Failed to fetch data');
         })
         .then(data => {
-            // Display the resolved IP address from the API response
-            if (data.query) {
-                document.getElementById('ipAddress').textContent = `IP Address: ${data.query}`;
+            // Find the A record (IP address) in the data
+            const aRecord = data.data.find(record => record.type === 'A');
+            
+            if (aRecord) {
+                document.getElementById('ipAddress').textContent = `IP Address: ${aRecord.content}`;
             } else {
-                document.getElementById('ipAddress').textContent = 'No IP address found for the domain.';
+                document.getElementById('ipAddress').textContent = 'No A record found for the domain.';
             }
         })
         .catch(error => {
