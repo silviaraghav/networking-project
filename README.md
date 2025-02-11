@@ -100,3 +100,26 @@ Users can test network connectivity using tools like Ping and Traceroute to veri
 - **Dynamic IP Address:** An IP address that may change over time.
 - **HTTPS (SSL/TLS):** Secure communication protocol that encrypts data between the client and server.
 
+## Testing and Validation ##
+### Testing Process
+- Test web page with recent versions of Chrome, Firefox, and Safari for behavior and to confirm that site works across the mentioned browsers.
+- Test the website on mobile devices to ensure that the layout was responsive and adjusted properly for smaller screens.
+### Cross-Browser Testing
+Test the website in the latest versions of Chrome, Firefox, and Safari to ensure that it functions correctly across different browsers.
+Mobile Responsiveness
+Test the website using different screen sizes and devices to ensure that it is fully responsive and user-friendly on mobile devices.
+### Validation
+Use W3C HTML Validator and CSS Validator to ensure that the code follows web standards and does not contain any errors or warnings.
+![image](https://github.com/user-attachments/assets/c86e1899-c38c-4207-b5ec-a809e3d245f9)
+
+## Acknowledgements
+- GitHub Pages :for the free hosting and immediate deployment of the website.
+- MDN Web Docs : has great documentation on HTML, CSS, and JavaScript .
+- W3C Validator: to test my code to be compliant with proper web standards.
+- networkcalc. free API for DNS resolver.
+![image](https://github.com/user-attachments/assets/7a199ac4-fc0f-4a8d-9c29-ce60db982504)
+
+
+
+
+
