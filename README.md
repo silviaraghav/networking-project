@@ -110,14 +110,13 @@ Mobile Responsiveness
 Test the website using different screen sizes and devices to ensure that it is fully responsive and user-friendly on mobile devices.
 ### Validation
 Use W3C HTML Validator and CSS Validator to ensure that the code follows web standards and does not contain any errors or warnings.
-![image](https://github.com/user-attachments/assets/c86e1899-c38c-4207-b5ec-a809e3d245f9)
 
 ## Acknowledgements
 - GitHub Pages :for the free hosting and immediate deployment of the website.
 - MDN Web Docs : has great documentation on HTML, CSS, and JavaScript .
 - W3C Validator: to test my code to be compliant with proper web standards.
 - networkcalc. free API for DNS resolver.
-![image](https://github.com/user-attachments/assets/7a199ac4-fc0f-4a8d-9c29-ce60db982504)
+
 
 
 
