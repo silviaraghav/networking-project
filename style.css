@@ -12,12 +12,17 @@ body {
     background-color: #f4f4f9;
     color: #333;
     padding: 20px;
+    background-image: url('https://img.freepik.com/free-photo/blurred-bokeh-style-lights-evening_53876-18300.jpg?t=st=1740432664~exp=1740436264~hmac=d0a2262ad4bbd9eeac4719d27f0b8f1a4b4c636f1ee4a479a7b9264c1362c9ff&w=2000');
+  background-size: cover;  /* Optional: Ensures the image covers the whole screen */
+  background-position: center;  /* Optional: Centers the image */
+  background-repeat: no-repeat; 
+    
 }
 
 /* Header styling */
 header {
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #af954c;
     color: white;
     padding: 30px;
     border-radius: 10px;
@@ -110,7 +115,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background-color: #4CAF50;
+    background-color: #c7a548;
     color: white;
     border-radius: 10px;
     font-size: 14px;
