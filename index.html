@@ -6,6 +6,8 @@
     <title>Computer Networking Project: Website Setup</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
         
 </head>
 <body>
@@ -38,7 +40,13 @@
         
         <label for="domain">Enter Domain Name:</label>
         <input type="text" id="domain" placeholder="Enter a domain (e.g., google.com)">
+        <!-- Hidden CSRF Token Input -->
+        <input type="hidden" id="csrfToken" value="">
+        
+        <div class="g-recaptcha" data-sitekey="6LdTCuQqAAAAAEO5U55nXM_o4dZnYG3MlG9Y1JH0" data-callback="captchaSuccess"></div>
+        <br>
         <button onclick="resolveDNS()">Resolve DNS</button>
+        
         
         <p id="ipAddress"></p>
     </section>
@@ -87,6 +95,12 @@
     <footer>
         <p>&copy; 2025 Computer Networking Project | GitHub Repository: <a href="https://github.com/silviaraghav/networking-project.git" target="_blank">silviaraghav/networking-project</a></p>
     </footer>
+    <script>
+        // Set CSRF token in hidden input field on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('csrfToken').value = localStorage.getItem('csrfToken');
+        });
+    </script>
 
 </body>
 </html>
