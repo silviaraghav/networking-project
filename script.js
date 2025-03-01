@@ -1,4 +1,3 @@
-
 //Database Supabase
 const SUPABASE_URL = "https://nvmtcxcztcqyctbayrqy.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im52bXRjeGN6dGNxeWN0YmF5cnF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA2ODEzNDEsImV4cCI6MjA1NjI1NzM0MX0.7SVGb2S1aAsH-3ttjun8-Eg2PViWJhlKP5spMYUddjw";  
@@ -22,7 +21,6 @@ async function resolveDNS() {
 
     try {
         const response = await fetch(`https://networkcalc.com/api/dns/lookup/${sanitizedDomain}`);
-        
         if (!response.ok) throw new Error("Failed to fetch data");
         
 
