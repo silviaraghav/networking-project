@@ -44,9 +44,7 @@ This repository contains the **Networking Project Website**, enhanced with **sec
 │── /public                  # Static files (if applicable)
 │── /src                     # Source code
 │── /config                  # Configuration files
-│   ├── nginx.conf           # Nginx configuration (if using Nginx)
-│   ├── docker-compose.yml   # Docker setup for deployment
-│   ├── database.sql         # Supabase Database Schema
+├── database.sql             # Supabase Database Schema
 │── /docs                    # Documentation & Screenshots
 │   ├── TECHNICAL_REPORT.md  # Markdown version of the technical report
 │   ├── screenshots/         # Screenshots of implemented features
@@ -81,12 +79,7 @@ This repository contains the **Networking Project Website**, enhanced with **sec
 1. Push changes to **`main`**\*\* branch\*\*.
 2. Go to **GitHub Pages settings** → Select `main` branch → Enable deployment.
 
-### **🔹 Deploying with Docker (Optional)**
 
-1. **Build and run Docker container:**
-   ```sh
-   docker-compose up --build
-   ```
 
 ---
 
@@ -103,26 +96,6 @@ This repository contains the **Networking Project Website**, enhanced with **sec
 - **Page Load Time Reduced:** From **3.2s to 1.8s**.
 - **Google Lighthouse Score:** 95+ after minification and lazy loading.
 
----
-
-## 📸 Screenshots
-
-| Feature                       | Screenshot |
-| ----------------------------- | ---------- |
-| **Google reCAPTCHA**          |            |
-| **Minified JS & CSS**         |            |
-| **GitHub Actions Deployment** |            |
-| **Security Testing Results**  |            |
-
----
-
-## 🤝 Contributors
-
-- **Silvia Raghav**
-
-## 📜 License
-
-This project is **open-source** and licensed under the MIT License.
 
 ---
 
@@ -131,7 +104,5 @@ This project is **open-source** and licensed under the MIT License.
 - [GitHub Pages Documentation](https://pages.github.com/)
 - [Google reCAPTCHA](https://www.google.com/recaptcha/about/)
 - [Supabase Documentation](https://supabase.com/docs)
-- [OWASP ZAP Security Testing](https://owasp.org/www-project-zap/)
 
-🚀 *This project ensures a **********secure, optimized, and scalable********** networking website!*
 
