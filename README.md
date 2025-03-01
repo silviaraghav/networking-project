@@ -1,9 +1,9 @@
 # Networking Project: Secure & Optimized Website
 
-## 📌 Overview
+## Overview
 This repository contains the **Networking Project Website**, enhanced with **security, performance optimizations, and monitoring features**. The project is deployed on **GitHub Pages** and includes configurations for **Cloudflare CDN and Supabase**.
 
-## 🚀 Features & Implementations
+## Features & Implementations
 ### **1. Security Enhancements**
 - **HTTPS Enforcement:** GitHub Pages automatically enforces HTTPS.
 - **Google reCAPTCHA:** Protects against brute-force attacks in login forms.
@@ -41,8 +41,8 @@ This repository contains the **Networking Project Website**, enhanced with **sec
 │   ├── deploy.yml           # Deployment workflow
 │── README.md                # Deployment instructions
 │── index.html               # Main website file
-│── style.css                # Minified styles
-│── script.js                # Minified JavaScript
+│── style.min.css                # Minified styles
+│── script.min.js                # Minified JavaScript
 ```
 
 ---
