@@ -20,14 +20,18 @@ async function resolveDNS() {
     document.getElementById("ipAddress").textContent = "Resolving domain...";
 
     try {
-        const response = await fetch(`https://networkcalc.com/api/dns/lookup/${sanitizedDomain}`);
+        
+        const response = await fetch(`https://api.ipify.org?domain=${sanitizedDomain}`);
+        // const response = await fetch(`https://networkcalc.com/api/dns/lookup/${sanitizedDomain}`);
+        
         if (!response.ok) throw new Error("Failed to fetch data");
         
 
-        const data = await response.json();
-        if (data.records && data.records.A && data.records.A.length > 0) {
-            const ip = data.records.A[0].address;
-            document.getElementById("ipAddress").textContent = `IP Address: ${ip}`;
+        const data = await response.text();
+        
+        if (data){
+            // const ip = data.records.A[0].address;
+            document.getElementById("ipAddress").textContent = `IP Address: ${data}`;
 
             // Save to Supabase
             await fetch(`${SUPABASE_URL}/rest/v1/dns_queries`, {
@@ -37,7 +41,7 @@ async function resolveDNS() {
                     "apikey": SUPABASE_KEY,
                     "Authorization": `Bearer ${SUPABASE_KEY}`,
                 },
-                body: JSON.stringify({ domain: sanitizedDomain, ip_address: ip }),
+                body: JSON.stringify({ domain: sanitizedDomain, ip_address: data}),
                 mode: "cors" // Ensure Cross-Origin requests are allowed
             });
 
