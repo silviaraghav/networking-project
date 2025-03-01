@@ -1,10 +1,10 @@
 # Networking Project: Secure & Optimized Website
 
-## 📌 Overview
+## Overview
 
-This repository contains the **Networking Project Website**, enhanced with **security, performance optimizations, and monitoring features**. The project is deployed on **GitHub Pages** and includes configurations for **Docker, Nginx, and Supabase**.
+This repository contains the **Networking Project Website**, enhanced with **security, performance optimizations, and monitoring features**. The project is deployed on **GitHub Pages** and includes configurations for Supabase**.
 
-## 🚀 Features & Implementations
+## Features & Implementations
 
 ### **1. Security Enhancements**
 
@@ -26,13 +26,9 @@ This repository contains the **Networking Project Website**, enhanced with **sec
 ### **3. Deployment & Infrastructure**
 
 - **GitHub Actions** for continuous integration and deployment (CI/CD).
-- **Docker** configuration for local deployment.
-- **Nginx Configuration** for hosting on a custom server.
 
 ### **4. Monitoring & Security Analysis**
 
-- **Google Analytics** to track user visits and behavior.
-- **Security Testing:** Used OWASP ZAP & Chrome DevTools.
 - **Supabase API Monitoring** with authentication and logging.
 
 ---
@@ -91,7 +87,7 @@ This repository contains the **Networking Project Website**, enhanced with **sec
 - **API Security:** Used Supabase **Row Level Security (RLS)**.
 - **Bot Prevention:** reCAPTCHA implementation logs blocked attempts.
 
-### **📊 Performance Metrics**
+### **Performance Metrics**
 
 - **Page Load Time Reduced:** From **3.2s to 1.8s**.
 - **Google Lighthouse Score:** 95+ after minification and lazy loading.
